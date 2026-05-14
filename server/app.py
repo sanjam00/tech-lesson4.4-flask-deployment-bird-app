@@ -6,6 +6,8 @@ load_dotenv()
 from flask import Flask, jsonify, request, make_response, render_template
 from flask_migrate import Migrate
 from flask_restful import Api, Resource
+from dotenv import load_dotenv
+load_dotenv()
 
 from models import db, Bird
 
